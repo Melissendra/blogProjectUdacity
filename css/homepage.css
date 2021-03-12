@@ -1,0 +1,35 @@
+@import "./header.css";
+@import "./footer.css";
+@import "./image.css";
+
+body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 800px 200px;
+    grid-template-areas:
+    "hd hd hd"
+    "main main main"
+    "footer footer footer";
+    background-color: #FAFBF4;
+    margin: 0;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.container {
+
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 100px 50px;
+}
+
+.introduction{
+    margin-bottom: 50px;
+    border: 1px solid #5D1814;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #5D1814;
+    padding: 10px;
+}
+
