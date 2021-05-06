@@ -5,7 +5,7 @@
 body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px 800px 200px;
+    grid-template-rows: 100px 900px 100px;
     grid-template-areas:
     "hd hd hd"
     "main main main"
@@ -15,21 +15,51 @@ body{
     font-family: 'Montserrat', 'sans-serif';
 }
 
+a {
+    text-decoration: none;
+}
+
+
+
 .container {
 
     grid-area: main;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-size: 1.2em;
     text-align: justify;
     margin: 100px 50px;
 }
 
 .introduction{
-    margin-bottom: 50px;
+    margin: 0 100px 50px;
     border: 1px solid #5D1814;
     border-radius: 10px;
     box-shadow: 10px 5px 5px #5D1814;
-    padding: 10px;
+    padding: 40px;
+    line-height: 1.5;
+}
+
+.categories{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+}
+
+.work-projects , .books, .gallery-photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categories a{
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #000000;
+}
+
+a:hover{
+    color: #F2292C;
 }
 

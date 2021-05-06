@@ -2,3 +2,9 @@ img {
     height: 250px;
     width: 250px;
 }
+
+.categories img{
+    border: 1px solid #5D1814;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #5D1814;
+}

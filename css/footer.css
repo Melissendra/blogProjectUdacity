@@ -1,4 +1,5 @@
 footer {
     grid-area: footer;
-    height: 200px;
+    background-color: #5D1814;
+    color: #fff;
 }

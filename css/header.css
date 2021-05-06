@@ -36,9 +36,5 @@ li{
 
 h1 a, li a{
     color: white;
-    text-decoration: none;
 }
 
-li.links a:hover, h1 a:hover{
-    color: #F2292C;
-}
