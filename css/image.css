@@ -1,10 +1,10 @@
 img {
-    height: 250px;
-    width: 250px;
+	height: 350px;
+	width: 450px;
 }
 
-.categories img{
-    border: 1px solid #5D1814;
-    border-radius: 10px;
-    box-shadow: 10px 5px 5px #5D1814;
+.categories img {
+	border: 1px solid #5d1814;
+	border-radius: 10px;
+	box-shadow: 10px 5px 5px #4c5760;
 }

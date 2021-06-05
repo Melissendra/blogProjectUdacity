@@ -1,5 +1,34 @@
 footer {
-    grid-area: footer;
-    background-color: #5D1814;
-    color: #fff;
+	display: flex;
+	grid-area: footer;
+	background-color: #444054;
+	color: #fff;
+	width: 100%;
+}
+
+.contact,
+.social-network {
+	display: flex;
+	align-items: center;
+}
+
+.contact {
+	width: 25%;
+	justify-content: space-evenly;
+	font-size: 1.2rem;
+}
+
+.social-network {
+	width: 75%;
+	justify-content: start;
+	font-size: 1.5rem;
+}
+
+.social-network h2 {
+	margin-left: 50px;
+}
+
+.facebook,
+.twitter {
+	margin-left: 30px;
 }

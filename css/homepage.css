@@ -1,65 +1,58 @@
 @import "./header.css";
 @import "./footer.css";
 @import "./image.css";
+@import "./searchBar.css";
 
-body{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px 900px 100px;
-    grid-template-areas:
-    "hd hd hd"
-    "main main main"
-    "footer footer footer";
-    background-color: #FAFBF4;
-    margin: 0;
-    font-family: 'Montserrat', 'sans-serif';
+body {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 10vh 250vh 5vh;
+	grid-template-areas:
+		"hd hd hd"
+		"main main main"
+		"footer footer footer";
+	background-color: #f2f4f3;
+	margin: 0;
+	font-family: "Montserrat", "sans-serif";
+	color: #4c5760;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
-
-
 
 .container {
-
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1.2em;
-    text-align: justify;
-    margin: 100px 50px;
+	height: 100%;
+	grid-area: main;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2em;
+	text-align: justify;
 }
 
-.introduction{
-    margin: 0 100px 50px;
-    border: 1px solid #5D1814;
-    border-radius: 10px;
-    box-shadow: 10px 5px 5px #5D1814;
-    padding: 40px;
-    line-height: 1.5;
+.ideas,
+.latest-posts {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
 }
 
-.categories{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 50px;
+.work-projects,
+.books,
+.about-me {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.work-projects , .books, .gallery-photos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.categories a {
+	margin-top: 30px;
+	font-size: 1.2em;
+	color: #000000;
 }
 
-.categories a{
-    margin-top: 30px;
-    font-size: 1.2em;
-    color: #000000;
+a:hover {
+	color: #bebbbb;
 }
-
-a:hover{
-    color: #F2292C;
-}
-

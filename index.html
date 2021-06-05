@@ -1,63 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/d9c3aa8dec.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/homepage.css">
-    <title>Gaelle's blog</title>
-</head>
-<body>
-<header>
-    <nav id="navbar">
-<!--        <img src="images/fox-logo.jpg" alt="fox logo">-->
-        <h1><a href="index.html">Gaelle's Blog</a></h1>
-        <div class="link">
-            <ul>
-                <li class="links"><a href="projects.html">Work's Projects</a></li>
-                <li class="links"><a href="books.html">Books</a> </li>
-                <li class="links"><a href="aboutMe.html">About Me</a> </li>
-            </ul>
-        </div>
-    </nav>
-</header>
-<section class="container">
-    <div class="categories">
-        <div class="work-projects">
-            <img src="images/works.jpg" alt="book with heart form pages">
-            <a href="books.html">
-                <h3>My Projects</h3>
-            </a>
-        </div>
-        <div class="books">
-            <img src="images/book.jpg" alt="book with heart form pages">
-            <a href="books.html">
-                <h3>My Books</h3>
-            </a>
-        </div>
-        <div class="about-me">
-            <img src="images/cat.jpg" alt="Cat eyes">
-            <a href="aboutMe.html">
-                <h3>About me</h3>
-            </a>
-        </div>
-    </div>
-</section>
-<footer>
-    <div class="social-network">
-        <h2>Share</h2>
-        <div class="facebook"><i class="fab fa-facebook"></i></div>
-        <div class="twitter"><i class="fab fa-twitter"></i></div>
-    </div>
-    <div class="contact">
-        <h2>Gaelle Lefeuvre</h2>
-        <p class="address">Meursac</p>
-        <p class="phone">06.68.95.95.31</p>
-    </div>
-</footer>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/homepage.css" />
+		<title>Gaelle's Cooking blog</title>
+		<script
+			src="https://kit.fontawesome.com/0d4b165897.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<nav id="navbar">
+				<h1><a href="index.html">Gaelle's Cooking Blog</a></h1>
+				<div class="search">
+					<form action="">
+						<input
+							type="text"
+							name="search"
+							id="search-input"
+							class="input-search"
+							placeholder="Search recipes"
+						/>
+					</form>
+				</div>
+				<div class="link">
+					<ul>
+						<li class="links"><a href="index.html">Home</a></li>
+						<li class="links"><a href="recipes.html">Recipes</a></li>
+						<li class="links"><a href="aboutMe.html">About Me</a></li>
+						<li class="links"><i class="fal fa-search"></i></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-- End of Header -->
+		<div class="container">
+			<!--  Ideas Section -->
+			<div class="ideas">
+				<div class="img-container">
+					<figure>
+						<img src="images/pasta.jpeg" alt="pasta idea" />
+						<figcaption>Bolognese Pasta</figcaption>
+					</figure>
+					<h2 class="idea-title">Bolognese Pasta</h2>
+				</div>
+				<div class="img-container">
+					<figure>
+						<img src="images/pizza.jpeg" alt="pizza idea" />
+						<figcaption>Chorizo Pizza</figcaption>
+					</figure>
+					<h2 class="idea-title">Spanish Pizza</h2>
+				</div>
+				<div class="img-container">
+					<figure>
+						<img src="images/asiaticFood.jpeg" alt="asian recipes idea" />
+						<figcaption>Asian Food</figcaption>
+					</figure>
+					<h2 class="idea-title">Want Some Asian meal?</h2>
+				</div>
+			</div>
+			<!-- End of Ideas Section -->
+			<!-- Latest Post -->
+			<div class="latest-post">
+				<div class="post">
+					<div class="img">
+						<figure>
+							<img src="images/IndianBook.jpeg" alt="Indian Book Recipes" />
+							<figcaption>
+								<b><i>Indian CookBook</i></b>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="description">
+						<p class="date">June 1rst, 2021</p>
+						<h2>Spicy and Sweet Recipes</h2>
+						<p class="review">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+							euismod turpis eu nunc porta, in convallis lectus facilisis.
+							Integer ornare velit sit amet nisi varius, a hendrerit nisl
+							tempus. Interdum et malesuada fames ac ante ipsum primis in
+							faucibus. Donec placerat libero mattis nunc lacinia molestie.
+							Praesent varius porta ultrices. Integer mattis tempus lorem, in
+							pharetra nisl imperdiet sit amet. Nam vel ex at sem pharetra
+							pretium. Mauris bibendum pulvinar mauris. Cras nulla nulla,
+							interdum id ex at, iaculis faucibus quam. Donec elementum quam et
+							est imperdiet interdum. Suspendisse at ultricies lectus. Mauris
+							porttitor lorem elit. Aliquam convallis tellus at.
+						</p>
+						<button>Read More</button>
+					</div>
+				</div>
+				<div class="post">
+					<div class="img">
+						<figure>
+							<img
+								src="images/ItalianCookBook.jpeg"
+								alt="Italian Book Recipes"
+							/>
+							<figcaption>
+								<b><i>Italian CookBook</i></b>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="description">
+						<p class="date">May 29th, 2021</p>
+						<h2>Hot Latino Recipes</h2>
+						<p class="review">
+							Ut accumsan sollicitudin est, eget vestibulum quam dapibus sed.
+							Vivamus sodales quis sapien sed egestas. Pellentesque habitant
+							morbi tristique senectus et netus et malesuada fames ac turpis
+							egestas. Mauris congue vel arcu at fringilla. Aenean ultricies mi
+							sit amet efficitur vestibulum. Suspendisse non eros consectetur
+							neque ullamcorper venenatis. Aenean a orci ac orci eleifend
+							pulvinar. Proin eget neque vel diam volutpat posuere et sed lacus.
+							Integer purus nunc, placerat non finibus vehicula, tristique ac
+							libero. Nulla augue lacus, rutrum convallis semper eu, rutrum quis
+							urna. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Donec velit.
+						</p>
+						<button>Read More</button>
+					</div>
+				</div>
+				<div class="post">
+					<div class="img">
+						<figure>
+							<img src="images/frenchCookBook.jpeg" alt="French Book Recipes" />
+							<figcaption>
+								<b><i>French CookBook</i></b>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="description">
+						<p class="date">May 12th, 2021</p>
+						<h2>Gastronomic Recipes</h2>
+						<p class="review">
+							Etiam ut velit leo. Curabitur eget feugiat urna. Fusce at interdum
+							mi. Curabitur vel pellentesque mi. Etiam at tristique arcu, vitae
+							fringilla dui. Etiam sed maximus dui. Nam at venenatis libero.
+							Pellentesque habitant morbi tristique senectus et netus et
+							malesuada fames ac turpis egestas. Nulla congue sapien in viverra
+							lobortis. Nullam quam libero, rhoncus ac arcu sit amet, interdum
+							lobortis leo. Pellentesque in ipsum hendrerit, ultrices sem eu,
+							venenatis nisl. Nunc feugiat felis risus, non pellentesque neque
+							laoreet facilisis. Nullam ac ultrices elit, et ultrices neque.
+							Maecenas lacinia erat efficitur felis tempor tempus. Vivamus
+							molestie consequat tristique. Pellentesque quis dignissim.
+						</p>
+						<button>Read More</button>
+					</div>
+				</div>
+			</div>
+			<!-- End Latest Post -->
+		</div>
+		<footer>
+			<div class="social-network">
+				<h2>My Network</h2>
+				<div class="facebook"><i class="fab fa-facebook"></i></div>
+				<div class="twitter"><i class="fab fa-twitter"></i></div>
+			</div>
+			<div class="contact">
+				<h2>Gaelle Lefeuvre</h2>
+				<p class="address">Meursac</p>
+				<p class="phone">06.11.11.11.11</p>
+			</div>
+		</footer>
+	</body>
 </html>
