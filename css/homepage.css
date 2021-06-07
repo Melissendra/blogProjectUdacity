@@ -6,7 +6,7 @@
 body {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 10vh 250vh 5vh;
+	grid-template-rows: 10vh 300vh 5vh;
 	grid-template-areas:
 		"hd hd hd"
 		"main main main"
@@ -21,19 +21,32 @@ a {
 	text-decoration: none;
 }
 
+button {
+	width: 30%;
+	height: 40px;
+	background-color: #444054;
+	color: #f2f4f3;
+	border-radius: 10px;
+}
+
 .container,
 .ideas-title,
 .ideas,
 .latest-title,
 .latest-post,
 .img-container,
-.post {
+.post,
+.contact,
+.form-contact,
+.form-contact label {
 	display: flex;
 }
 
 .container,
 .img-container,
-.post {
+.post,
+.contact,
+.form-contact {
 	flex-direction: column;
 }
 
@@ -47,8 +60,32 @@ a {
 .ideas,
 .latest-post {
 	justify-content: space-evenly;
-	width: 100%;
 	margin: 80px auto;
+}
+
+.contact,
+.ideas,
+.latest-post,
+.ideas-title,
+.latest-title,
+.posts {
+	width: 100%;
+}
+
+.contact,
+.img-container,
+.post,
+.form-contact label {
+	align-items: center;
+}
+
+.ideas-title,
+.img-container,
+.latest-title,
+.contact-title,
+.contact-form,
+.form-contact label {
+	justify-content: center;
 }
 
 .ideas {
@@ -56,16 +93,13 @@ a {
 }
 
 .img-container {
-	justify-content: center;
-	align-items: center;
 	font-size: 1.5em;
 	font-weight: bold;
 }
 
 .ideas-title,
-.latest-title {
-	width: 100%;
-	justify-content: center;
+.latest-title,
+.contact-title {
 	font-size: 3em;
 	font-weight: bold;
 }
@@ -74,7 +108,8 @@ a {
 	margin: 120px auto 30px;
 }
 
-.latest-title {
+.latest-title,
+.contact-title {
 	margin: 100px auto;
 }
 
@@ -83,7 +118,6 @@ a {
 }
 
 .posts {
-	width: 100%;
 	background-color: #444054;
 	box-shadow: 15px 0 15px #4c5760;
 }
@@ -94,7 +128,6 @@ a {
 
 .post {
 	background-color: #f2f4f3;
-	align-items: center;
 	width: 33%;
 	height: 900px;
 	margin: 0 50px;
@@ -123,12 +156,43 @@ a {
 	margin-bottom: 10px;
 }
 
-button {
-	width: 30%;
-	height: 40px;
+.contact-form {
+	width: 900px;
+	height: 350px;
 	background-color: #444054;
+}
+
+.form-contact {
+	height: 100%;
+}
+
+.form {
+	width: 100%;
+	height: 80%;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.form-contact label {
 	color: #f2f4f3;
-	border-radius: 10px;
+}
+
+.form input {
+	width: 80%;
+	height: 40%;
+	margin: auto;
+	padding-left: 10px;
+}
+
+.form-contact button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button:hover {
+	background-color: #9d5c63;
 }
 
 a:hover,

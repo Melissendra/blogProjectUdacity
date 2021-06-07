@@ -6,13 +6,13 @@ footer {
 	width: 100%;
 }
 
-.contact,
+.footer-contact,
 .social-network {
 	display: flex;
 	align-items: center;
 }
 
-.contact {
+.footer-contact {
 	width: 25%;
 	justify-content: space-evenly;
 	font-size: 1.2rem;
