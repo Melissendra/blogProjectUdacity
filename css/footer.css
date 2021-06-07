@@ -49,6 +49,11 @@ footer {
 		font-size: 1.2em;
 	}
 
+	.network {
+		display: flex;
+		justify-content: center;
+	}
+
 	.social-network h2,
 	.facebook,
 	.twitter {
