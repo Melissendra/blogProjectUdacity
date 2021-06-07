@@ -30,6 +30,7 @@ button {
 }
 
 .container,
+.div-ideas,
 .ideas-title,
 .ideas,
 .latest-title,
@@ -54,6 +55,7 @@ button {
 }
 
 .contact,
+.div-ideas,
 .img-container,
 .post,
 .btn,
@@ -62,6 +64,7 @@ button {
 }
 
 .container,
+.div-ideas,
 .img-container,
 .post,
 .contact,
@@ -82,7 +85,9 @@ button {
 	margin: 80px auto;
 }
 
+.container,
 .contact,
+.div-ideas,
 .ideas,
 .latest-post,
 .ideas-title,
@@ -256,7 +261,7 @@ a:hover,
 	}
 
 	.post {
-		width: 85%;
+		width: 100%;
 		margin: 0;
 		overflow: hidden;
 	}
@@ -274,14 +279,34 @@ a:hover,
 	}
 }
 
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1024px) {
 	body {
-		grid-template-columns: 1fr;
-		grid-template-rows: 10vh 200vh 5vh;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 10vh 250vh 10vh;
 		grid-template-areas:
 			"hd hd"
 			"main main"
 			"footer footer";
+	}
+
+	.img-container {
+		font-size: 1.2em;
+	}
+
+	.contact-title {
+		font-size: 1.6em;
+		text-align: center;
+	}
+
+	.latest-post {
+		height: 1400px;
+		margin: 30px auto;
+	}
+
+	.post {
+		width: 60%;
+		height: 80%;
+		overflow: hidden;
 	}
 }
 
