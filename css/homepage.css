@@ -38,8 +38,27 @@ button {
 .post,
 .contact,
 .form-contact,
+.btn,
 .form-contact label {
 	display: flex;
+}
+
+.ideas-title,
+.img-container,
+.latest-title,
+.contact-title,
+.contact-form,
+.btn,
+.form-contact label {
+	justify-content: center;
+}
+
+.contact,
+.img-container,
+.post,
+.btn,
+.form-contact label {
+	align-items: center;
 }
 
 .container,
@@ -72,27 +91,13 @@ button {
 	width: 100%;
 }
 
-.contact,
-.img-container,
-.post,
-.form-contact label {
-	align-items: center;
-}
-
-.ideas-title,
-.img-container,
-.latest-title,
-.contact-title,
-.contact-form,
-.form-contact label {
-	justify-content: center;
-}
-
 .ideas {
 	height: 500px;
 }
 
 .img-container {
+	height: 100%;
+	width: 450px;
 	font-size: 1.5em;
 	font-weight: bold;
 }
@@ -158,8 +163,9 @@ button {
 
 .contact-form {
 	width: 900px;
-	height: 350px;
+	height: 400px;
 	background-color: #444054;
+	box-shadow: 5px 5px 5px #4c5760;
 }
 
 .form-contact {
@@ -171,7 +177,7 @@ button {
 	height: 80%;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 }
 
 .form-contact label {
@@ -180,15 +186,16 @@ button {
 
 .form input {
 	width: 80%;
-	height: 40%;
+	height: 30%;
 	margin: auto;
 	padding-left: 10px;
 }
 
-.form-contact button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.btn button {
+	background-color: #f2f4f3;
+	color: #4c5760;
+	font-size: 1.2em;
+	margin-bottom: 30px;
 }
 
 button:hover {
@@ -203,4 +210,79 @@ a:hover,
 .img-container img:hover {
 	margin-bottom: 50px;
 	transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+	body {
+		grid-template-columns: 1fr;
+		grid-template-rows: 10vh 650vh 10vh;
+		grid-template-areas:
+			"hd hd"
+			"main main"
+			"footer footer";
+	}
+
+	.ideas,
+	.latest-post {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.ideas-title,
+	.latest-title,
+	.contact-title {
+		font-size: 1.8em;
+		text-align: center;
+	}
+
+	.ideas {
+		height: 1100px;
+	}
+
+	.ideas-title,
+	.latest-title {
+		margin: 50px auto 0px;
+	}
+
+	.img-container {
+		width: 100%;
+		font-size: 1.4em;
+		margin-bottom: 20px;
+	}
+
+	.latest-post {
+		height: 3000px;
+		margin: 30px auto;
+	}
+
+	.post {
+		width: 85%;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	.contact-form {
+		width: 100%;
+		height: 200px;
+	}
+
+	.btn button {
+		font-size: 1em;
+		width: 18%;
+		height: 30px;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+	body {
+		grid-template-columns: 1fr;
+		grid-template-rows: 10vh 200vh 5vh;
+		grid-template-areas:
+			"hd hd"
+			"main main"
+			"footer footer";
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1380px) {
 }
