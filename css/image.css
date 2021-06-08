@@ -52,19 +52,24 @@ figcaption {
 	}
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1025px) {
 	img {
-		width: 250px;
-		height: 300px;
+		width: 450px;
+		height: 400px;
 	}
 
 	.post img {
-		width: 250px;
-		height: 250px;
-		margin-top: 0;
+		width: 350px;
+		height: 350px;
+		margin-top: 20px;
+	}
+
+	.img {
+		margin-bottom: 50px;
 	}
 
 	figcaption {
+		font-size: 0.8em;
 		margin-left: 5px;
 	}
 }

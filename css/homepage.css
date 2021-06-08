@@ -279,14 +279,20 @@ a:hover,
 	}
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1025px) {
 	body {
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 10vh 250vh 10vh;
+		grid-template-rows: 10vh 700vh 10vh;
 		grid-template-areas:
 			"hd hd"
 			"main main"
 			"footer footer";
+	}
+
+	.ideas,
+	.latest-post {
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.img-container {
@@ -298,15 +304,41 @@ a:hover,
 		text-align: center;
 	}
 
-	.latest-post {
+	.ideas {
 		height: 1400px;
+	}
+
+	.latest-post {
+		height: 3000px;
 		margin: 30px auto;
 	}
 
 	.post {
-		width: 60%;
-		height: 80%;
-		overflow: hidden;
+		width: 80%;
+	}
+
+	.date {
+		font-size: 1.2em;
+	}
+
+	.description h2 {
+		font-size: 1.3em;
+	}
+	.review {
+		font-size: 1em;
+		margin-bottom: 20px;
+	}
+
+	.contact-form {
+		width: 90%;
+		height: 200px;
+		margin-top: 100px;
+	}
+
+	.btn button {
+		font-size: 1em;
+		width: 18%;
+		height: 30px;
 	}
 }
 
