@@ -282,7 +282,7 @@ a:hover,
 @media (min-width: 601px) and (max-width: 1025px) {
 	body {
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 10vh 700vh 10vh;
+		grid-template-rows: 10vh 550vh 10vh;
 		grid-template-areas:
 			"hd hd"
 			"main main"
