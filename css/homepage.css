@@ -3,12 +3,6 @@
 @import "./image.css";
 @import "./searchBar.css";
 
-/* @media (max-height: 1024px) {
-	body {
-		grid-template-rows: 10vh 600vh 10vh;
-	}
-} */
-
 body {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -223,14 +217,14 @@ a:hover,
 	transform: scale(1.1);
 }
 
-@media (max-width: 600px) {
+@media (min-width: 801px) and (max-width: 1024px) {
 	body {
-		grid-template-columns: 1fr;
-		grid-template-rows: 10vh 700vh 10vh;
-		grid-template-areas:
+		/* grid-template-columns: 1fr; */
+		grid-template-rows: 10vh 550vh 10vh;
+		/* grid-template-areas:
 			"hd hd"
 			"main main"
-			"footer footer";
+			"footer footer"; */
 	}
 
 	.ideas,
@@ -239,26 +233,17 @@ a:hover,
 		align-items: center;
 	}
 
-	.ideas-title,
-	.latest-title,
+	.img-container {
+		font-size: 1.2em;
+	}
+
 	.contact-title {
-		font-size: 1.8em;
+		font-size: 1.6em;
 		text-align: center;
 	}
 
 	.ideas {
-		height: 1100px;
-	}
-
-	.ideas-title,
-	.latest-title {
-		margin: 50px auto 0px;
-	}
-
-	.img-container {
-		width: 100%;
-		font-size: 1.4em;
-		margin-bottom: 20px;
+		height: 1400px;
 	}
 
 	.latest-post {
@@ -267,13 +252,23 @@ a:hover,
 	}
 
 	.post {
-		width: 100%;
-		margin: 0;
-		overflow: hidden;
+		width: 80%;
+	}
+
+	.date {
+		font-size: 1.2em;
+	}
+
+	.description h2 {
+		font-size: 1.3em;
+	}
+	.review {
+		font-size: 1em;
+		margin-bottom: 20px;
 	}
 
 	.contact-form {
-		width: 100%;
+		width: 90%;
 		height: 200px;
 		margin-top: 100px;
 	}
@@ -287,7 +282,7 @@ a:hover,
 
 @media (min-width: 601px) and (max-width: 800px) {
 	body {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 		grid-template-rows: 10vh 600vh 10vh;
 		grid-template-areas:
 			"hd hd"
@@ -348,32 +343,42 @@ a:hover,
 	}
 }
 
-@media (min-width: 801px) and (max-width: 1024px) {
+@media (max-width: 600px) {
 	body {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 10vh 450vh 10vh;
+		grid-template-columns: 1fr;
+		grid-template-rows: 10vh 700vh 10vh;
 		grid-template-areas:
 			"hd hd"
 			"main main"
 			"footer footer";
 	}
+
 	.ideas,
 	.latest-post {
 		flex-direction: column;
 		align-items: center;
 	}
 
-	.img-container {
-		font-size: 1.2em;
-	}
-
+	.ideas-title,
+	.latest-title,
 	.contact-title {
-		font-size: 1.6em;
+		font-size: 1.8em;
 		text-align: center;
 	}
 
 	.ideas {
-		height: 1400px;
+		height: 1100px;
+	}
+
+	.ideas-title,
+	.latest-title {
+		margin: 50px auto 0px;
+	}
+
+	.img-container {
+		width: 100%;
+		font-size: 1.4em;
+		margin-bottom: 20px;
 	}
 
 	.latest-post {
@@ -382,23 +387,13 @@ a:hover,
 	}
 
 	.post {
-		width: 80%;
-	}
-
-	.date {
-		font-size: 1.2em;
-	}
-
-	.description h2 {
-		font-size: 1.3em;
-	}
-	.review {
-		font-size: 1em;
-		margin-bottom: 20px;
+		width: 100%;
+		margin: 0;
+		overflow: hidden;
 	}
 
 	.contact-form {
-		width: 90%;
+		width: 100%;
 		height: 200px;
 		margin-top: 100px;
 	}
