@@ -4,6 +4,11 @@ img {
 	border-radius: 10px;
 }
 
+.recipes-img img {
+	height: 500px;
+	width: 600px;
+}
+
 .img-container img {
 	border: 1px solid transparent;
 	box-shadow: 5px 5px 5px #4c5760;
@@ -19,6 +24,13 @@ img {
 	width: 400px;
 	height: 450px;
 	margin-top: 30px;
+}
+
+.about-me img {
+	height: 250px;
+	width: 250px;
+	border-radius: 100%;
+	margin: 50px;
 }
 
 figcaption {

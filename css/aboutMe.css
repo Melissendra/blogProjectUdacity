@@ -1,0 +1,42 @@
+body {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 10vh 80vh 10vh;
+	grid-template-areas:
+		"hd hd hd"
+		"main main main"
+		"footer footer footer";
+	background-color: #f2f4f3;
+	margin: 0;
+	font-family: "Raleway", "sans-serif";
+	color: #4c5760;
+}
+
+.about-me-section {
+	grid-area: main;
+}
+
+.about-me-section,
+.about-me,
+.introduction {
+	display: flex;
+	justify-content: center;
+}
+
+.about-me {
+	margin: auto;
+	width: 70%;
+	height: 500px;
+	border-radius: 15px;
+	background-color: #444054;
+	color: #f2f4f3;
+	box-shadow: 15px 0 15px #4c5760;
+}
+
+.introduction {
+	width: 70%;
+	text-align: justify;
+	font-size: 1.2em;
+	align-items: flex-end;
+	margin: 0 50px 100px 10px;
+}
