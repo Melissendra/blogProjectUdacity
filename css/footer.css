@@ -36,33 +36,16 @@ footer {
 }
 
 /* responsive design */
-@media (max-width: 600px) {
+
+@media (min-width: 801px) and (max-width: 1024px) {
 	.footer-contact,
 	.social-network {
 		width: 50%;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: center;
-	}
-
-	.social-network {
-		font-size: 1.2em;
-	}
-
-	.network {
-		display: flex;
-		justify-content: center;
-	}
-
-	.social-network h2,
-	.facebook,
-	.twitter {
-		margin-left: 15px;
+		font-size: 2em;
 	}
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 800px) {
 	.footer-contact,
 	.social-network,
 	.network {
@@ -72,20 +55,48 @@ footer {
 	.footer-contact,
 	.social-network {
 		width: 50%;
+		font-size: 1.1em;
+	}
+}
 
+@media (max-width: 600px) {
+	footer h2 {
+		margin: 0;
+	}
+	.footer-contact,
+	.social-network {
+		width: 50%;
+		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: center;
+		height: 100%;
 	}
 
-	.network,
-	.phone {
-		margin-top: 20px;
+	.social-network h2 {
+		font-size: 0.8em;
+		height: 50%;
+	}
+
+	.network {
+		display: flex;
+		font-size: 0.9em;
+		width: 100%;
 	}
 
 	.social-network h2,
 	.facebook,
 	.twitter {
-		margin-left: 30px;
+		margin-left: 15px;
+	}
+
+	.footer-contact h2,
+	.phone {
+		height: 50%;
+		font-size: 0.9em;
+	}
+
+	.footer-contact h2 {
+		padding-top: 10px;
 	}
 }
