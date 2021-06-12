@@ -18,7 +18,8 @@ body {
 
 .about-me-section,
 .about-me,
-.introduction {
+.introduction,
+.intro {
 	display: flex;
 	justify-content: center;
 }
@@ -37,8 +38,13 @@ body {
 	width: 70%;
 	text-align: justify;
 	font-size: 1.2em;
-	align-items: flex-end;
-	margin: 0 50px 100px 10px;
+	align-items: center;
+	flex-direction: column;
+	margin: 40px 50px 100px 10px;
+}
+
+.introduction h4 {
+	font-size: 1.6em;
 }
 
 @media (max-width: 600px) {
@@ -71,7 +77,7 @@ body {
 	body {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 10vh 130vh 10vh;
+		grid-template-rows: 10vh 160vh 10vh;
 		grid-template-areas:
 			"hd hd"
 			"main main"
@@ -82,11 +88,13 @@ body {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		height: 900px;
+		height: 1200px;
+		width: 90%;
 	}
 
 	.introduction {
-		margin: 0 0 50px 0;
+		font-size: 1.4em;
+		margin: 0 0 20px 0;
 	}
 }
 
@@ -94,7 +102,7 @@ body {
 	body {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 10vh 80vh 10vh;
+		grid-template-rows: 10vh 100vh 10vh;
 		grid-template-areas:
 			"hd hd"
 			"main main"
@@ -105,7 +113,7 @@ body {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		height: 700px;
+		height: 1000px;
 	}
 
 	.introduction {
