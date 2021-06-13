@@ -1,7 +1,7 @@
 @import "./header.css";
 @import "./footer.css";
 @import "./image.css";
-@import "./searchBar.css";
+@import "./aboutMe.css";
 
 body {
 	display: grid;
@@ -27,6 +27,11 @@ button {
 	background-color: #444054;
 	color: #f2f4f3;
 	border-radius: 10px;
+}
+
+blockquote {
+	font-size: 0.8em;
+	margin-bottom: 30px;
 }
 
 .container,
@@ -124,7 +129,7 @@ button {
 }
 
 .latest-post {
-	height: 900px;
+	height: 1100px;
 }
 
 .posts {
@@ -139,7 +144,7 @@ button {
 .post {
 	background-color: #f2f4f3;
 	width: 33%;
-	height: 900px;
+	height: 1000px;
 	margin: 0 50px;
 	border-radius: 15px;
 }
@@ -220,7 +225,7 @@ a:hover,
 @media (min-width: 801px) and (max-width: 1024px) {
 	body {
 		grid-template-columns: 1fr;
-		grid-template-rows: 10vh 480vh 10vh;
+		grid-template-rows: 10vh 520vh 10vh;
 		grid-template-areas:
 			"hd hd"
 			"main main"
@@ -247,7 +252,7 @@ a:hover,
 	}
 
 	.latest-post {
-		height: 3000px;
+		height: 3500px;
 		margin: 30px auto;
 	}
 
@@ -283,7 +288,7 @@ a:hover,
 @media (min-width: 601px) and (max-width: 800px) {
 	body {
 		grid-template-columns: 1fr;
-		grid-template-rows: 10vh 620vh 10vh;
+		grid-template-rows: 10vh 650vh 10vh;
 		grid-template-areas:
 			"hd hd"
 			"main main"
@@ -305,16 +310,21 @@ a:hover,
 		text-align: center;
 	}
 
+	.latest-title {
+		margin: 50px auto 0;
+	}
+
 	.ideas {
 		height: 1400px;
 	}
 
 	.latest-post {
-		height: 3000px;
+		height: 3500px;
 		margin: 30px auto;
 	}
 
 	.post {
+		height: 1000px;
 		width: 80%;
 	}
 

@@ -1,4 +1,4 @@
-body {
+/* body {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 10vh 80vh 10vh;
@@ -10,10 +10,11 @@ body {
 	margin: 0;
 	font-family: "Raleway", "sans-serif";
 	color: #4c5760;
-}
+} */
 
 .about-me-section {
 	grid-area: main;
+	height: 500px;
 }
 
 .about-me-section,
@@ -26,7 +27,10 @@ body {
 }
 
 .about-me-section {
+	margin: 100px auto;
 	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .about-me-section h2 {
@@ -52,6 +56,7 @@ body {
 	text-align: justify;
 	font-size: 1.2em;
 	align-items: center;
+	justify-content: space-around;
 	flex-direction: column;
 	margin: 40px 50px 100px 10px;
 }
@@ -61,17 +66,8 @@ body {
 }
 
 @media (min-width: 801px) and (max-width: 1024px) {
-	body {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 10vh 150vh 10vh;
-		grid-template-areas:
-			"hd hd"
-			"main main"
-			"footer footer";
-	}
-
 	.about-me-section {
+		margin: 250px auto 0;
 		align-items: flex-start;
 		justify-content: flex-start;
 	}
@@ -90,17 +86,8 @@ body {
 }
 
 @media (min-width: 601px) and (max-width: 800px) {
-	body {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 10vh 190vh 10vh;
-		grid-template-areas:
-			"hd hd"
-			"main main"
-			"footer footer";
-	}
-
 	.about-me-section {
+		height: 800px;
 		align-items: flex-start;
 		justify-content: flex-start;
 	}
@@ -109,29 +96,23 @@ body {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		height: 1200px;
+		height: 1400px;
 		width: 100%;
 	}
 
 	.introduction {
-		font-size: 1.4em;
-		margin: 0 0 20px 0;
+		font-size: 1.2em;
+		margin: 0 0 50px 0;
+	}
+
+	.introduction h4 {
+		margin-bottom: 50px;
 	}
 }
 
 @media (max-width: 600px) {
-	body {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 10vh 200vh 10vh;
-		grid-template-areas:
-			"hd hd"
-			"main main"
-			"footer footer";
-	}
-
-	nav h1 {
-		margin: auto 40px;
+	.about-me-section {
+		margin: 300px auto;
 	}
 
 	.about-me-section h2 {
@@ -147,12 +128,18 @@ body {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		height: 1200px;
+		height: 1700px;
 		margin: 50px 0;
 		border-radius: 0;
 	}
 
 	.introduction {
+		font-size: 1em;
 		margin: 0 0 50px 0;
+	}
+
+	.introduction h4 {
+		margin-bottom: 50px;
+		font-size: 1.5em;
 	}
 }
