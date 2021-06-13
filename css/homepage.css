@@ -6,7 +6,7 @@
 body {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 10vh 350vh 10vh;
+	grid-template-rows: 10vh 320vh 10vh;
 	grid-template-areas:
 		"hd hd hd"
 		"main main main"

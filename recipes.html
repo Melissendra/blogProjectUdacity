@@ -24,7 +24,7 @@
 			<nav id="navbar">
 				<h1><a href="index.html">Gaelle's Cooking Blog</a></h1>
 				<div class="search">
-					<form action="">
+					<form action="POST">
 						<input
 							type="text"
 							name="search"
@@ -46,28 +46,32 @@
 		</header>
 		<div class="container">
 			<!-- Search Section -->
-			<section class="categories">
+			<div class="categories">
 				<nav class="navbar-cat">
 					<div class="categ">
-						<li class="links-recipes">
-							<i class="fal fa-trophy"></i>Most Popular
-						</li>
-						<li class="links-recipes">
-							<i class="fal fa-cauldron"></i>Cook Up
-						</li>
-						<li class="links-recipes"><i class="fal fa-oven"></i>Meal Oven</li>
-						<li class="links-recipes"><i class="fal fa-salad"></i>Salads</li>
-						<li class="links-recipes last">
-							<i class="fal fa-ice-cream"></i>Desserts
-						</li>
+						<ul>
+							<li class="links-recipes">
+								<i class="fal fa-trophy"></i>Most Popular
+							</li>
+							<li class="links-recipes">
+								<i class="fal fa-cauldron"></i>Cook Up
+							</li>
+							<li class="links-recipes">
+								<i class="fal fa-oven"></i>Meal Oven
+							</li>
+							<li class="links-recipes"><i class="fal fa-salad"></i>Salads</li>
+							<li class="links-recipes last">
+								<i class="fal fa-ice-cream"></i>Desserts
+							</li>
+						</ul>
 					</div>
 				</nav>
-			</section>
+			</div>
 			<!-- End Search Section -->
 			<section class="recipes">
 				<div class="recipes-card">
 					<h2 class="recipe-title">Bolognese Pasta</h2>
-					<div class="recipes-img" name="bolognese">
+					<a class="recipes-img" href="#bolognese">
 						<div class="img-container">
 							<img src="images/pasta.jpeg" alt="bolognese pasta" />
 						</div>
@@ -78,7 +82,7 @@
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 						</div>
-					</div>
+					</a>
 					<div class="recipe-description">
 						<div class="ingredients">
 							<h3 class="ingredients-title">Ingredient</h3>
@@ -116,76 +120,80 @@
 						</div>
 						<div class="recipe-steps">
 							<h3 class="step-title">Method</h3>
-							<li>
-								<h4>Step 1</h4>
-								<p>
-									Put a large saucepan on a medium heat and add 1 tbsp olive
-									oil.
-								</p>
-							</li>
-							<li>
-								<h4>Step 2</h4>
-								<p>
-									Add 4 finely chopped bacon rashers and fry for 10 mins until
-									golden and crisp.
-								</p>
-							</li>
-							<li>
-								<h4>Step 3</h4>
-								<p>
-									Reduce the heat and add the 2 onions, 2 carrots, 2 celery
-									sticks, 2 garlic cloves and the leaves from 2-3 sprigs
-									rosemary, all finely chopped, then fry for 10 mins. Stir the
-									veg often until it softens.
-								</p>
-							</li>
-							<li>
-								<h4>Step 4</h4>
-								<p>
-									Increase the heat to medium-high, add 500g beef mince and cook
-									stirring for 3-4 mins until the meat is browned all over.
-								</p>
-							</li>
-							<li>
-								<h4>Step 5</h4>
-								<p>
-									Add 2 tins plum tomatoes, the finely chopped leaves from ¾
-									small pack basil, 1 tsp dried oregano, 2 bay leaves, 2 tbsp
-									tomato purée, 1 beef stock cube, 1 deseeded and finely chopped
-									red chilli (if using), 125ml red wine and 6 halved cherry
-									tomatoes. Stir with a wooden spoon, breaking up the plum
-									tomatoes.
-								</p>
-							</li>
-							<li>
-								<h4>Step 6</h4>
-								<p>
-									Bring to the boil, reduce to a gentle simmer and cover with a
-									lid. Cook for 1 hr 15 mins stirring occasionally, until you
-									have a rich, thick sauce.
-								</p>
-							</li>
-							<li>
-								<h4>Step 7</h4>
-								<p>
-									Add the 75g grated parmesan, check the seasoning and stir.
-								</p>
-							</li>
-							<li>
-								<h4>Step 8</h4>
-								<p>
-									When the bolognese is nearly finished, cook 400g spaghetti
-									following the pack instructions.
-								</p>
-							</li>
-							<li>
-								<h4>Step 9</h4>
-								<p>
-									Drain the spaghetti and either stir into the bolognese sauce,
-									or serve the sauce on top. Serve with more grated parmesan,
-									the remaining basil leaves and crusty bread, if you like.
-								</p>
-							</li>
+							<ul>
+								<li>
+									<h4>Step 1</h4>
+									<p>
+										Put a large saucepan on a medium heat and add 1 tbsp olive
+										oil.
+									</p>
+								</li>
+								<li>
+									<h4>Step 2</h4>
+									<p>
+										Add 4 finely chopped bacon rashers and fry for 10 mins until
+										golden and crisp.
+									</p>
+								</li>
+								<li>
+									<h4>Step 3</h4>
+									<p>
+										Reduce the heat and add the 2 onions, 2 carrots, 2 celery
+										sticks, 2 garlic cloves and the leaves from 2-3 sprigs
+										rosemary, all finely chopped, then fry for 10 mins. Stir the
+										veg often until it softens.
+									</p>
+								</li>
+								<li>
+									<h4>Step 4</h4>
+									<p>
+										Increase the heat to medium-high, add 500g beef mince and
+										cook stirring for 3-4 mins until the meat is browned all
+										over.
+									</p>
+								</li>
+								<li>
+									<h4>Step 5</h4>
+									<p>
+										Add 2 tins plum tomatoes, the finely chopped leaves from ¾
+										small pack basil, 1 tsp dried oregano, 2 bay leaves, 2 tbsp
+										tomato purée, 1 beef stock cube, 1 deseeded and finely
+										chopped red chilli (if using), 125ml red wine and 6 halved
+										cherry tomatoes. Stir with a wooden spoon, breaking up the
+										plum tomatoes.
+									</p>
+								</li>
+								<li>
+									<h4>Step 6</h4>
+									<p>
+										Bring to the boil, reduce to a gentle simmer and cover with
+										a lid. Cook for 1 hr 15 mins stirring occasionally, until
+										you have a rich, thick sauce.
+									</p>
+								</li>
+								<li>
+									<h4>Step 7</h4>
+									<p>
+										Add the 75g grated parmesan, check the seasoning and stir.
+									</p>
+								</li>
+								<li>
+									<h4>Step 8</h4>
+									<p>
+										When the bolognese is nearly finished, cook 400g spaghetti
+										following the pack instructions.
+									</p>
+								</li>
+								<li>
+									<h4>Step 9</h4>
+									<p>
+										Drain the spaghetti and either stir into the bolognese
+										sauce, or serve the sauce on top. Serve with more grated
+										parmesan, the remaining basil leaves and crusty bread, if
+										you like.
+									</p>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>

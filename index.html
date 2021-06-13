@@ -29,7 +29,7 @@
 			<nav id="navbar">
 				<h1><a href="index.html">Gaelle's Cooking Blog</a></h1>
 				<div class="search">
-					<form action="">
+					<form action="POST">
 						<input
 							type="text"
 							name="search"
@@ -58,7 +58,9 @@
 				</div>
 				<div class="ideas">
 					<div class="img-container">
-						<a href="recipes.html#bolognese"><img src="images/pasta.jpeg" alt="pasta idea" /></a>
+						<a href="recipes.html#bolognese"
+							><img src="images/pasta.jpeg" alt="pasta idea"
+						/></a>
 						<h2 class="idea-title">Bolognese Pasta</h2>
 					</div>
 					<div class="img-container">
@@ -77,8 +79,8 @@
 				<div class="latest-title">
 					<h2>Latest Posts</h2>
 				</div>
-				<article class="latest-post">
-					<div class="post">
+				<div class="latest-post">
+					<article class="post">
 						<div class="img">
 							<figure>
 								<img src="images/IndianBook.jpeg" alt="Indian Book Recipes" />
@@ -105,7 +107,7 @@
 							</p>
 							<button>Read More</button>
 						</div>
-					</div>
+					</article>
 					<article class="post">
 						<div class="img">
 							<figure>
@@ -171,27 +173,39 @@
 					</article>
 				</div>
 				<!-- End Latest Post -->
-				<!-- Contact Form -->
-				<div class="contact">
-					<div class="contact-title">
-						<h2>Want to follow us? Sign In to the newsletter</h2>
-					</div>
-					<div class="contact-form">
-						<form action="POST" class="form-contact">
-							<div class="form">
-								<label for="email" id="email">Email:</label>
-								<input type="email" name="email" id="email-input" class="email-input" placeholder="Email">
-								<label for="first-name" id="first-name">First Name</label>
-								<input type="text" name="first-name" id="firstname-input" class="firstname-input" placeholder="First Name">
-							</div>
-							<div class="btn">
-								<button type="submit">Send</button>
-							</div>
-						</form>
-					</div>
-				</div>
-				<!-- End of contact form -->
 			</div>
+			<!-- Contact Form -->
+			<div class="contact">
+				<div class="contact-title">
+					<h2>Want to follow us? Sign In to the newsletter</h2>
+				</div>
+				<div class="contact-form">
+					<form action="POST" class="form-contact">
+						<div class="form">
+							<label for="email">Email:</label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								class="email-input"
+								placeholder="Email"
+							/>
+							<label for="first-name">First Name</label>
+							<input
+								type="text"
+								name="first-name"
+								id="first-name"
+								class="firstname-input"
+								placeholder="First Name"
+							/>
+						</div>
+						<div class="btn">
+							<button type="submit">Send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- End of contact form -->
 		</div>
 		<footer>
 			<div class="social-network">
@@ -200,7 +214,6 @@
 					<div class="facebook"><i class="fab fa-facebook"></i></div>
 					<div class="twitter"><i class="fab fa-twitter"></i></div>
 				</div>
-
 			</div>
 			<div class="footer-contact">
 				<h2>Gaelle Lefeuvre</h2>

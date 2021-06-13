@@ -64,16 +64,22 @@ body {
 	body {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 10vh 100vh 10vh;
+		grid-template-rows: 10vh 150vh 10vh;
 		grid-template-areas:
 			"hd hd"
 			"main main"
 			"footer footer";
 	}
 
+	.about-me-section {
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+
 	.about-me {
 		display: flex;
 		align-items: center;
+		justify-content: flex-start;
 		flex-direction: column;
 		height: 1000px;
 	}
