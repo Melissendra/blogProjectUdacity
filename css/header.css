@@ -81,7 +81,7 @@ li i {
 	.link {
 		display: flex;
 		justify-content: center;
-		width: 60%;
+		width: 50%;
 		font-size: 0.8em;
 		text-align: center;
 	}

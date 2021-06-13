@@ -154,7 +154,7 @@ body {
 @media (min-width: 801px) and (max-width: 1024px) {
 	body {
 		grid-template-columns: 1fr;
-		grid-template-rows: 10vh 400vh 10vh;
+		grid-template-rows: 10vh 450vh 10vh;
 		grid-template-areas:
 			"hd hd"
 			"main main"
@@ -193,7 +193,7 @@ body {
 	}
 
 	.recipes {
-		height: 450vh;
+		height: 400vh;
 		margin: 0;
 	}
 
@@ -239,7 +239,7 @@ body {
 @media (min-width: 601px) and (max-width: 800px) {
 	body {
 		grid-template-columns: 1fr;
-		grid-template-rows: 10vh 400vh 10vh;
+		grid-template-rows: 10vh 450vh 10vh;
 		grid-template-areas:
 			"hd hd"
 			"main main"
