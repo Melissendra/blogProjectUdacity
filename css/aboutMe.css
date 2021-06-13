@@ -93,11 +93,16 @@ body {
 	body {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 10vh 160vh 10vh;
+		grid-template-rows: 10vh 190vh 10vh;
 		grid-template-areas:
 			"hd hd"
 			"main main"
 			"footer footer";
+	}
+
+	.about-me-section {
+		align-items: flex-start;
+		justify-content: flex-start;
 	}
 
 	.about-me {
@@ -105,7 +110,7 @@ body {
 		align-items: center;
 		flex-direction: column;
 		height: 1200px;
-		width: 90%;
+		width: 100%;
 	}
 
 	.introduction {
@@ -123,6 +128,10 @@ body {
 			"hd hd"
 			"main main"
 			"footer footer";
+	}
+
+	nav h1 {
+		margin: auto 40px;
 	}
 
 	.about-me-section h2 {
