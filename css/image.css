@@ -38,31 +38,32 @@ figcaption {
 	font-style: italic;
 }
 
-@media (min-width: 1380px) and (max-width: 1600px) {
+@media only screen and (min-width: 1224px) and (max-width: 1824px) {
 	img {
-		width: 400px;
-		height: 300px;
+		width: 300px;
+		height: 200px;
 	}
+
 	.post img {
 		width: 350px;
 		height: 330px;
 	}
 }
 
-@media (min-width: 1050px) and (max-width: 1379px) {
-	img {
-		width: 300px;
-		height: 250px;
-	}
-	.post img {
-		width: 250px;
-		height: 250px;
-		margin-top: 0;
-	}
-	figcaption {
-		margin-left: 5px;
-	}
-}
+/*@media (min-width: 1050px) and (max-width: 1379px) {*/
+/*	img, a img {*/
+/*		width: 300px;*/
+/*		height: 250px;*/
+/*	}*/
+/*	.post img {*/
+/*		width: 250px;*/
+/*		height: 250px;*/
+/*		margin-top: 0;*/
+/*	}*/
+/*	figcaption {*/
+/*		margin-left: 5px;*/
+/*	}*/
+/*}*/
 
 @media (min-width: 601px) and (max-width: 1025px) {
 	img {
